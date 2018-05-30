@@ -694,33 +694,33 @@
         <script src="assets/js/materialize.js"></script>
         <script src="assets/js/jquery.magnific-popup.js"></script>
         <script src="./assets/js/gmaps.js"></script>
+
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT8X8g8pE5CVZzdQGicTmZK5Jxcn6DIdM&callback=initMap"
                 type="text/javascript"></script>
-        <script src="assets/js/gmaps.min.js"></script>
         <script>
-            var initMap = function() {
-            var map = new GMaps({
-                el: '.ourmap',
-                lat: 19.094719,
-                lng: 74.7299878,
-                scrollwheel: false,
-                zoom: 17,
-                zoomControl: true,
-                panControl: false,
-                streetViewControl: true,
-                mapTypeControl: false,
-                overviewMapControl: false,
-                clickable: false,
-                styles: [{'stylers': [{'hue': '#000'}, {saturation: -200},
-                            {gamma: 0.50}]}]
-            });
-            map.addMarker({
+            function initMap() {
+                var map = new GMaps({
+                    el: '.ourmap',
+                    lat: 19.094719,
+                    lng: 74.7299878,
+                    scrollwheel: false,
+                    zoom: 17,
+                    zoomControl: true,
+                    panControl: false,
+                    streetViewControl: true,
+                    mapTypeControl: false,
+                    overviewMapControl: false,
+                    clickable: false,
+                    styles: [{'stylers': [{'hue': '#000'}, {saturation: -200},
+                        {gamma: 0.50}]}]
+                });
+                map.addMarker({
 //                19.094719,74.7299878
-                lat: 19.094734,
-                lng: 74.732193
-            });}
-
+                    lat: 19.094734,
+                    lng: 74.732193
+                });}
         </script>
+        <script src="assets/js/gmaps.min.js"></script>
 
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
