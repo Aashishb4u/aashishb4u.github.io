@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed066ccd-bd3f-432e-b57d-45b140913951" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/navmenu.css" afterPath="$PROJECT_DIR$/assets/css/navmenu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="ed066ccd-bd3f-432e-b57d-45b140913951" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +14,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="642" column="58" lean-forward="true" selection-start-line="642" selection-start-column="58" selection-end-line="642" selection-end-column="58" />
+            <state relative-caret-position="141">
+              <caret line="653" column="57" lean-forward="false" selection-start-line="653" selection-start-column="57" selection-end-line="653" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -57,6 +52,7 @@
       <find>placeho</find>
       <find>form</find>
       <find>Send</find>
+      <find>.main_contactus_area input</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,12 +155,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527692436220</updated>
       <workItem from="1527692438618" duration="2659000" />
-      <workItem from="1527697358653" duration="1756000" />
+      <workItem from="1527697358653" duration="3753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4415000" />
+    <option name="totallyTimeSpent" value="6412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -229,8 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="642" column="58" lean-forward="true" selection-start-line="642" selection-start-column="58" selection-end-line="642" selection-end-column="58" />
+        <state relative-caret-position="141">
+          <caret line="653" column="57" lean-forward="false" selection-start-line="653" selection-start-column="57" selection-end-line="653" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
