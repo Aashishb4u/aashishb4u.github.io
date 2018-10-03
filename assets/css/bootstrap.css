@@ -5945,6 +5945,10 @@ a.bg-danger:focus, a.bg-danger:hover {
   margin-bottom: 1.5rem !important;
 }
 
+.m-c-1 {
+  margin-bottom: 0.5rem !important
+}
+
 .m-l-2 {
   margin-left: 1.5rem !important;
 }

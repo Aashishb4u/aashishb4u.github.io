@@ -181,8 +181,22 @@ $('.scrolldown a').bind('click', function () {
 });
 
 
+    var onImageChange = function(){
+        console.log('hey')
+    };
 
+    var urls = ['homebg.jpg', 'makeup_brush.jpg', 'sandhyadeep_one.jpg'];
 
+    var cout = 1;
+    $('#home').css('background-image', 'url("' + urls[0] + '")');
+    setInterval(function() {
+        $('#home').css('background-image', 'url("assets/images/' + urls[cout] + '")');
+        cout == urls.length-1 ? cout = 0 : cout++;
+    }, 5000);
+
+    // $(function(){
+    //     onImageChange();
+    // }, 5000);
 
     //End
 });
@@ -193,8 +207,11 @@ $('.scrolldown a').bind('click', function () {
 jQuery(document).on("scroll", function () {
     if ($(document).scrollTop() > 120) {
         $("header").addClass("small");
+        $(".cd-menu-trigger span").addClass("onScrollBurger");
     } else {
         $("header").removeClass("small");
+        $(".cd-menu-trigger span").removeClass("onScrollBurger");
+
     }
 });
 

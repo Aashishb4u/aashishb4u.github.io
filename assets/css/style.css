@@ -230,16 +230,22 @@ textarea.form-control:focus:not([readonly]) {
 
 .cd-header a.brand-logo img{
     width: 8%;
-    margin-left: 10%;
+    margin-left: 6%;
     padding: 5px;
     margin-top: 20px;
 }
 .cd-header{
+    color: white;
     position: fixed;
     top: 0;
 }
 .cd-header.small{
-    background: rgb(252, 143, 133);
+    color: black;
+    background: white;
+}
+
+.onScrollBurger{
+    background-color: black !important;
 }
 nav ul li {
     transition: background-color .3s;
@@ -295,12 +301,13 @@ nav ul li {
     background: url(../images/makeup_brush.jpg) no-repeat top center ;
     background-size: cover;
     position: relative;
-    padding-top: 80px;
+    height: 70vh;
    background-attachment: fixed;
 }
 
 .main_home {
-    padding: 170px 20px 170px 20px;
+    height: 70vh;
+    /*padding: 170px 20px 170px 20px;*/
     position: relative;
 }
 .main_home h1{
