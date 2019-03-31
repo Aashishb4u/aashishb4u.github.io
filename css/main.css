@@ -1871,3 +1871,33 @@ Property Tax Dashboard
 .count .increment {
     font-weight: bold;
 }
+
+.side-menu-container {
+    position: fixed;
+    border-radius: 5px;
+    border: 1px solid darkslategray;
+    display: flex;
+    top: 26%;
+    flex-direction: column;
+    left: 0;
+    padding: 20px;
+    bottom: 5%;
+    box-shadow: 2px 3px 34px rgba(0, 0, 0, 0.3);
+}
+
+.side-menu {
+    padding: 15px;
+    margin: 9px 0;
+    text-align: center;
+    border: 1px solid darkslategray;
+    color: darkslategray;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.side-menu:hover {
+    color: white;
+    background-color: darkslategrey;
+    box-shadow: 2px 3px 34px rgba(0, 0, 0, 0.3);
+}
