@@ -1,246 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <title>PMC Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PMC Dashboard Website">
+    <meta name="author" content="PMC IT Department">
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" item sizes="57x57" href="favicons/favicon_pmc.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/favicon_pmc.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/favicon_pmc.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/favicon_pmc.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/favicon_pmc.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/favicon_pmc.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/favicon_pmc.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/favicon_pmc.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon_pmc.png">
+    <link rel="icon" type="img/png" href="favicons/favicon_pmc.png" sizes="32x32">
+    <link rel="icon" type="img/png" href="favicons/favicon_pmc.png" sizes="96x96">
+    <link rel="icon" type="img/png" href="favicons/favicon_pmc.png" sizes="192x192">
+    <link rel="icon" type="img/png" href="favicons/favicon_pmc.png" sizes="16x16">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="shortcut icon" href="favicons/favicon_pmc.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<title>Neuron HTML CSS Template</title>
-<!--
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
 
-Template 2085 Neuron
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jPushMenu.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/main.css">
 
-http://www.tooplate.com/view/2085-neuron
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
 
--->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+    <![endif]-->
 
-<!-- Main css -->
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
-
-</head>
+</head> <!-- head -->
 <body>
 
-<!-- PRE LOADER -->
+<!-- ============== start wrapper  ============== -->
+<div id="wrapper">
+    <div  style="width: 100%; height: 100%" id="particles-js"></div>
+    <!-- main-nav -->
+    <div class="main-nav">
+        <div class="logo-left">
+            <a data-scroll href="#">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="dashboard-title-text hide">
+            <label class="typewritter">Pune Municipal Corporation BI Dashboard</label>
+        </div>
+        <div class="dashboard-title-text hide-on-scroll show">
+            <label>Pune Municipal Corporation BI Dashboard</label>
+        </div>
+        <!--<div class="menu-button toggle-menu menu-right push-body">-->
+            <!--<button><i class="fa fa-bars"></i></button>-->
+        <!--</div>-->
+    </div> <!-- //end main-nav -->
 
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-wordpress">
-          <span class="sk-inner-circle"></span>
-     </div>
-</div>
+    <div class="sub-nav">
+        <marquee class="marquee_text">Top most visited dashboards: PMC Care | visits: 888</marquee>
+    </div> <!-- //end main-nav -->
 
-<!-- Navigation section  -->
+    <!--=========================
+        Start area for Menu
+    ============================== -->
+    <nav id="main-navigation" class="nav-menu nav-menu-vertical nav-menu-right">
+        <ul class="list-inline">
+            <!--<li class="current"><a href="#">home</a></li>-->
+            <!--<li><a href="#features">Dashboards</a></li>-->
+            <!--<li><a href="#courses">Courses</a></li>-->
+            <!--<li><a href="#portfolio">Portfolio</a></li>-->
+            <!--<li><a href="#teams">The Team</a></li>-->
+            <!--<li><a href="#latest-blog">Blog</a></li>-->
+            <!--<li><a href="#client-feedback">Testimonials</a></li>-->
+        </ul>
+    </nav>
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-     <div class="container">
+    <!-- End of menu area -->
 
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-               </button>
-               <a href="index.html" class="navbar-brand">Neuron</a>
-          </div>
-          <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-               </ul>
-          </div>
 
-  </div>
-</div>
+    <!-- ============== start home section  ============== -->
+    <!--<section id="home">-->
+        <!--<div id="left-menu"></div>-->
+        <!--<div id="home-slider" class="carousel slide in" data-ride="carousel">-->
+            <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+            <!--<ol class="carousel-indicators">-->
+                <!--<li class="active" data-slide-to="0" data-target="#home-slider"></li>-->
+                <!--<li data-slide-to="1" data-target="#home-slider" class=""></li>-->
+                <!--&lt;!&ndash;<li data-slide-to="2" data-target="#home-slider" class=""></li>&ndash;&gt;-->
+            <!--</ol>-->
 
-<!-- Home Section -->
+            <!--<div class="carousel-inner">-->
+                <!--<div class="item active" style="background-image: url(img/slider/01.jpg)">-->
+                    <!--<div class="col-sm-offset-1 caption caption-wide">-->
 
-<section id="home" class="main-home parallax-section">
-     <div class="overlay"></div>
-     <!--<div id="particles-js"></div>-->
-     <div class="container">
-          <div class="row">
+                        <!--&lt;!&ndash;<a class="btn btn-start wow fadeInUp" href="#features" data-scroll data-wow-delay=".85s">Learn More</a>&ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>&lt;!&ndash; //item &ndash;&gt;-->
+                <!--<div class="item" style="background-image: url(img/slider/02.jpg)">-->
+                    <!--<div class="col-sm-offset-1 caption caption-wide">-->
+                        <!--&lt;!&ndash;<a class="btn btn-start wow fadeInUp" href="#features" data-scroll data-wow-delay=".85s">Free Download</a>&ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>&lt;!&ndash; //item &ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="item" style="background-image: url(img/slider/03.jpg)">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="col-sm-offset-1 caption">&ndash;&gt;-->
+                        <!--&lt;!&ndash;&lt;!&ndash;<a class="btn btn-start wow fadeInUp" href="#features" data-scroll data-wow-delay=".85s">Read More</a>&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&lt;!&ndash; //item &ndash;&gt;&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+    <!-- ========= //End home section ========= -->
 
-               <div class="col-md-12 col-sm-12">
-                    <h1>Hello! This is Neuron.</h1>
-                    <h4>Responsive Blog HTML CSS Website Template</h4>
-                    <a href="#blog" class="smoothScroll btn btn-default">Discover More</a>
-               </div>
 
-          </div>
-     </div>
-</section>
+    <!-- ============== Start features section ============== -->
+    <!--<section id="features">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="flip-box-inner">-->
+                            <!--<div class="content fadeInDown" data-wow-delay=".15s">-->
+                                <!--<p class="icon text-center"><i class="awesome-icons fa fa-handshake-o"></i></p>-->
+                                <!--<h5 class="title text-center">PMC Care</h5>-->
+                            <!--</div>-->
+                            <!--<div class="back-content">-->
+                                <!--Description-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
 
-<!-- Blog Section -->
+                <!--<a href="http://115.124.122.134:54574/en-us/dashboards/STP/STP" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".35s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-trash"></i></p>-->
+                            <!--<h5 class="title text-center">STP</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
 
-<section id="blog">
-     <div class="container">
-          <div class="row">
+                <!--<a href="http://115.124.97.239:54574/dashboards/Call%20Center/Call%20Center" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".55s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-headphones"></i></p>-->
+                            <!--<h5 class="title text-center">Call Center Performance</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
 
-               <div class="col-md-offset-1 col-md-10 col-sm-12">
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-image">
-                              <a href="single-post.html">
-                                   <img src="images/blog-image1.jpg" class="img-responsive" alt="Blog Image">
-                              </a>
-                         </div>
-                         <div class="blog-post-title">
-                              <h3><a href="single-post.html">We Help You Create Perfect Modern Design</a></h3>
-                         </div>
-                         <div class="blog-post-format">
-                              <span><a href="#"><img src="images/author-image1.jpg" class="img-responsive img-circle"> Jen Lopez</a></span>
-                              <span><i class="fa fa-date"></i> July 22, 2017</span>
-                              <span><a href="#"><i class="fa fa-comment-o"></i> 35 Comments</a></span>
-                         </div>
-                         <div class="blog-post-des">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
-                         </div>
+                <!--<a href="http://118.185.27.66/AutoDCR.Dashboard2/PMC/pmcdash.aspx#" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".55s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-building"></i></p>-->
+                            <!--<h5 class="title text-center">Building Development</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/Budget/Budget" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".15s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-dollar"></i></p>-->
+                            <!--<h5 class="title text-center">Budget</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/Civic%20Services/RTS" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".35s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-male"></i></p>-->
+                            <!--<h5 class="title text-center">Civic Services</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239/It_Dashboard/" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".55s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-laptop"></i></p>-->
+                            <!--<h5 class="title text-center">IT Dashboard</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="./pages/propertyTax.html" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".55s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-money"></i></p>-->
+                            <!--<h5 class="title text-center">Property Tax</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/Finance/Finance" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".15s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-pie-chart"></i></p>-->
+                            <!--<h5 class="title text-center">Finance</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/Social%20Media/Social%20Media" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".35s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-camera-retro"></i></p>-->
+                            <!--<h5 class="title text-center">Social Media</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239/FMC/" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".55s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-briefcase"></i></p>-->
+                            <!--<h5 class="title text-center">FMC</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/SWM/SWM" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".55s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-recycle"></i></p>-->
+                            <!--<h5 class="title text-center">SWM</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/Water/Water" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".15s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-tint"></i></p>-->
+                            <!--<h5 class="title text-center">Water</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/Ward-Performance/Ward%20Performance" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".35s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-users"></i></p>-->
+                            <!--<h5 class="title text-center">Ward Performance</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/Health/Health" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".55s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-stethoscope"></i></p>-->
+                            <!--<h5 class="title text-center">Health</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+                <!--<a href="http://115.124.97.239:54574/dashboards/Collections/Collections" target="_blank">-->
+                    <!--<div class="col-md-3 feature-item">-->
+                        <!--<div class="content wow fadeInDown" data-wow-delay=".55s">-->
+                            <!--<p class="icon text-center"><i class="awesome-icons fa fa-rupee"></i></p>-->
+                            <!--<h5 class="title text-center">Collections</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+
+            <!--</div> &lt;!&ndash; //row &ndash;&gt;-->
+        <!--</div> &lt;!&ndash; //container &ndash;&gt;-->
+    <!--</section>-->
+
+    <!-- ============== Start counter ============== -->
+                <!-- //row -->
+    <!-- ========= //End counter ========= -->
+    <section id="image-features">
+        <!--<div>Aashish</div>-->
+        <!--<div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-YzYB80ccC2637179-45.gif' border='0' alt='counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=YzYB80ccC2637179'></script></div>-->
+        <div class="container">
+            <div class="sub-container row">
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/health_image.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">PMC Care</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </a>
 
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-image">
-                              <a href="single-post.html">
-                                   <img src="images/blog-image2.jpg" class="img-responsive" alt="Blog Image">
-                              </a>
-                         </div>
-                         <div class="blog-post-title">
-                              <h3><a href="single-post.html">In pretium tellus et ante accumsan</a></h3>
-                         </div>
-                         <div class="blog-post-format">
-                              <span><a href="#"><img src="images/author-image2.jpg" class="img-responsive img-circle"> Leo Dennis</a></span>
-                              <span><i class="fa fa-date"></i> June 10, 2017</span>
-                              <span><a href="#"><i class="fa fa-comment-o"></i> 48 Comments</a></span>
-                         </div>
-                         <div class="blog-post-des">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
-                         </div>
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/sewage_treatment_plant.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Sewage Treatment Plant</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </a>
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/call_center_image.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Call Center Performance</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
 
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-video">
-                              <div class="embed-responsive embed-responsive-16by9">
-                                   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pgmx7z49OEk" allowfullscreen></iframe>
-                              </div>
-                         </div>
-                         <div class="blog-post-title">
-                              <h3><a href="single-post.html">Nam interdum maximus dolor faucibus</a></h3>
-                         </div>
-                         <div class="blog-post-format">
-                              <span><a href="#"><img src="images/author-image1.jpg" class="img-responsive img-circle"> Jen Lopez</a></span>
-                              <span><i class="fa fa-date"></i> May 30, 2017</span>
-                              <span><a href="#"><i class="fa fa-comment-o"></i> 63 Comments</a></span>
-                         </div>
-                         <div class="blog-post-des">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
-                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </a>
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/building-development.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Building Department</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
 
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-image">
-                              <a href="single-post.html">
-                                   <img src="images/blog-image3.jpg" class="img-responsive" alt="Blog Image">
-                              </a>
-                         </div>
-                         <div class="blog-post-title">
-                              <h3><a href="single-post.html">The ingredients that make a great burger</a></h3>
-                         </div>
-                         <div class="blog-post-format">
-                              <span><a href="#"><img src="images/author-image2.jpg" class="img-responsive img-circle"> Leo Dennis</a></span>
-                              <span><i class="fa fa-date"></i> April 18, 2017</span>
-                              <span><a href="#"><i class="fa fa-comment-o"></i> 124 Comments</a></span>
-                         </div>
-                         <div class="blog-post-des">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
-                         </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </a>
 
-                    <div class="blog-post-thumb">
-                         <div class="blog-post-image">
-                              <a href="single-post.html">
-                                   <img src="images/blog-image4.jpg" class="img-responsive" alt="Blog Image">
-                              </a>
-                         </div>
-                         <div class="blog-post-title">
-                              <h3><a href="single-post.html">Vestibulum vel mauris nec ex tempus</a></h3>
-                         </div>
-                         <div class="blog-post-format">
-                              <span><a href="#"><img src="images/author-image1.jpg" class="img-responsive img-circle"> Jen Lopez</a></span>
-                              <span><i class="fa fa-date"></i> March 12, 2017</span>
-                              <span><a href="#"><i class="fa fa-comment-o"></i> 256 Comments</a></span>
-                         </div>
-                         <div class="blog-post-des">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                              <a href="single-post.html" class="btn btn-default">Continue Reading</a>
-                         </div>
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/budget-new.png) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Budget</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-               </div>
+                </a>
 
-          </div>
-     </div>
-</section>
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/civic_services.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Civic Services</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
 
-<!-- Footer Section -->
-
-<footer>
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-5 col-md-offset-1 col-sm-6">
-                    <h3>Neuron Studio</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                    <div class="footer-copyright">
-                         <p>Copyright &copy; 2017 Your Company - Design: Tooplate</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-               </div>
+                </a>
 
-               <div class="col-md-4 col-md-offset-1 col-sm-6">
-                    <h3>Talk to us</h3>
-                    <p><i class="fa fa-globe"></i> 512 Delicious Street, San Francisco, CA 10880</p>
-                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
-                    <p><i class="fa fa-save"></i> info@company.com</p>
-               </div>
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/it_department.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">IT Dashboard</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
 
-               <div class="clearfix col-md-12 col-sm-12">
-                    <hr>
-               </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-               <div class="col-md-12 col-sm-12">
-                    <ul class="social-icon">
-                         <li><a href="#" class="fa fa-facebook"></a></li>
-                         <li><a href="#" class="fa fa-twitter"></a></li>
-                         <li><a href="#" class="fa fa-google-plus"></a></li>
-                         <li><a href="#" class="fa fa-dribbble"></a></li>
-                         <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-               </div>
-               
-          </div>
-     </div>
-</footer>
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/propertty_tax.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Property Tax</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
 
-<!-- Back top -->
-<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-<!-- SCRIPTS -->
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/mathematics-finance.png) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Finance</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
 
-<script src="js/jquery.js"></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/social_media.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Social Media</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/fmc.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">FMC</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/solid_waste_management.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Solid Waste Management</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/water_department.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Water Department</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/ward_performance.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Ward Perfomance</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/health_department.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Health</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://115.124.97.239:54574/dashboards/PMC%20Care/PMCCare" target="_blank">
+                    <div class="col-md-4 image-features-item">
+                        <div class="row inner-row">
+                            <div class="example-2 card">
+                                <div class="wrapper">
+                                    <div class="background" style="background: url(./pmc_images/collection_department.jpg) center / cover no-repeat;"></div>
+                                    <div class="data">
+                                        <div class="content">
+                                            <h1 class="title"><a href="#">Collection</a></h1>
+                                            <div class="count"><i class="fa fa-eye"></i> <span class="increment">888</span></div>
+                                            <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div> <!-- //row -->
+        </div> <!-- //container -->
+    </section>
+    <!-- ========= //End features section ========= -->
+
+
+    <!-- ============== Start footer ============== -->
+    <section id="footer">
+
+        <!-- copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-4">
+                        <p class="info">
+                            &copy; 2019 Pune Municipal Corporation
+                        </p>
+                    </div>
+                </div> <!-- //row -->
+            </div> <!-- //container -->
+        </div> <!-- //end copyright -->
+    </section>
+    <!-- ========= //End footer ========= -->
+
+</div> <!-- //end wrapper -->
+
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/particles.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/jquery.parallax.js"></script>
+<!-- loader -->
+<script src="js/loader.min.js"></script>
+<script src="js/preloader.js"></script>
+<!-- animation effects -->
+<script src="js/wow.min.js"></script>
+<!-- count-down -->
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<!-- content slider -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- pushmenu -->
+<script src="js/jPushMenu.js"></script>
+<!-- smooth navigation -->
+<script src="js/mousescroll.js"></script>
+<script src="js/jquery.nav.js"></script>
+<!-- filter portfolio & lightbox -->
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<!-- smooth scrool -->
 <script src="js/smoothscroll.js"></script>
-<script src="js/custom.js"></script>
+<!-- custom js -->
+<script src="js/app.js"></script>
+
+<script src="js/particles.min.js"></script>
 
 </body>
+
 </html>
